@@ -1,0 +1,6 @@
+part1/node_modules/*
+part1/.gitignore
+part1/.vscode
+part2/node_modules/*
+part2/.gitignore
+part2/.vscode
