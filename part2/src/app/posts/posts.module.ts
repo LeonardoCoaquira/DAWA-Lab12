@@ -1,17 +1,13 @@
+// posts.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PostDetailsComponent } from './post-details/post-details.component';
 import { PostListComponent } from './post-list/post-list.component';
-
-
+import { PostDetailsComponent } from './post-details/post-details.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    PostDetailsComponent,
-    PostListComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [PostListComponent, PostDetailsComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [PostListComponent, PostDetailsComponent]
 })
 export class PostsModule { }

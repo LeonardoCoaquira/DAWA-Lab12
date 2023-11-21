@@ -1,0 +1,62 @@
+/* app.component.css */
+
+.welcome-message {
+    padding: 50px;
+  }
+  
+  .welcome-message h1 {
+    font-size: 3em;
+  }
+  
+  .portfolio-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .portfolio-section h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .img {
+    max-height: 22em;
+  }
+
+  .img-portf {
+    align-items: center;
+  }
+  
+  /* app.component.css */
+
+    .card-img {
+    max-width: 12em;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido de la tarjeta */
+  }
+  
+  .card-body {
+    padding: 15px; /* Ajusta el relleno según tus necesidades */
+  }
+  
+  .portfolio-section h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center;
+  }

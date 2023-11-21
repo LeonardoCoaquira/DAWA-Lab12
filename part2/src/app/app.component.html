@@ -1,8 +1,14 @@
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/about">About</a>
-</nav>
+<div class="app-container">
+  <div class="nav-container">
+    <nav>
+      <a routerLink="/" routerLinkActive="active-link">Home</a>
+      <a routerLink="/about" routerLinkActive="active-link">Imagenes</a>
+      <a routerLink="/users" routerLinkActive="active-link">Lista de Usuarios</a>
+      <a routerLink="/posts" routerLinkActive="active-link">Lista de publicaciones</a>
+    </nav>
+  </div>
 
-<router-outlet></router-outlet>
-<app-user-list (viewDetails)="onViewDetails($event)"></app-user-list>
-<app-user-details [userId]="selectedUserId"></app-user-details>
+  <div class="content-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,5 +1,9 @@
-<div *ngIf="userId">
-    User ID: {{ userId }}
-</div>
-<p>test</p>
-  
+<div *ngIf="userId !== undefined">
+    <h2>Detalles del Usuario</h2>
+    <p>ID de Usuario: {{userId}}</p>
+    <p>Nombre: {{getUserName()}}</p>
+    <p class="welcome-message">¡Bienvenido a los detalles del usuario! Aquí encontrarás información adicional y mensajes
+      importantes.</p>
+    <p>Este es un mensaje de ejemplo para el usuario {{getUserName()}}. ¡Esperamos que disfrutes explorando la aplicación!
+    </p>
+  </div>
