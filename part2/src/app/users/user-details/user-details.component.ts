@@ -7,12 +7,18 @@ import { Component, Input } from '@angular/core';
 })
 export class UserDetailsComponent {
   @Input() userId: number | undefined;
-  @Input() users: { id: number; name: string }[] = [];
+  @Input() selectedUser: any;
+  @Input() users: { id: number; name: string; description?: string }[] = [];
 
   constructor() { }
 
   getUserName(): string | undefined {
     const user = this.users.find(u => u.id === this.userId);
     return user ? user.name : undefined;
+  }
+
+  getUserDescription(): string | undefined {
+    const user = this.users.find(u => u.id === this.userId);
+    return user ? user.description : undefined;
   }
 }

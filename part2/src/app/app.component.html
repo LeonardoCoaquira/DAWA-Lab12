@@ -1,12 +1,22 @@
 <div class="app-container">
-  <div class="nav-container">
-    <nav>
-      <a routerLink="/" routerLinkActive="active-link">Home</a>
-      <a routerLink="/about" routerLinkActive="active-link">Imagenes</a>
-      <a routerLink="/users" routerLinkActive="active-link">Lista de Usuarios</a>
-      <a routerLink="/posts" routerLinkActive="active-link">Lista de publicaciones</a>
-    </nav>
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto w-100">
+        <li class="nav-item flex-grow-1">
+          <a class="nav-link" routerLink="/" routerLinkActive="active-link">Home</a>
+        </li>
+        <li class="nav-item flex-grow-1">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active-link">Nosotros</a>
+        </li>
+        <li class="nav-item flex-grow-1">
+          <a class="nav-link" routerLink="/users" routerLinkActive="active-link">Usuarios</a>
+        </li>
+        <li class="nav-item flex-grow-1">
+          <a class="nav-link" routerLink="/posts" routerLinkActive="active-link">Publicaciones</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <div class="content-container">
     <router-outlet></router-outlet>

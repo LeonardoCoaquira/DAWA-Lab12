@@ -1,8 +1,17 @@
-<ul>
-  <li *ngFor="let user of users">
-    {{user.id}} - {{user.name}}
-    <button (click)="showDetails(user.id)">Mostrar Detalles</button>
-  </li>
-</ul>
-
-<app-user-details [userId]="selectedUserId" [users]="users"></app-user-details>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let user of users">
+          <div class="d-flex justify-content-between align-items-center">
+            <span>{{user.id}} - {{user.name}}</span>
+            <button class="btn btn-primary" (click)="showDetails(user.id)">Mostrar Detalles</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <app-user-details [userId]="selectedUserId" [users]="users"></app-user-details>
+    </div>
+  </div>
+</div>

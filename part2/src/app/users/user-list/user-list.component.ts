@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserListComponent implements OnInit {
   users = [
-    { id: 1, name: 'John' },
-    { id: 2, name: 'Jane' },
-    { id: 3, name: 'Doe' },
-    { id: 4, name: 'Yefersson' },
-    { id: 5, name: 'Guillermo' }
+    { id: 1, name: 'John', description: 'Developer' },
+    { id: 2, name: 'Jane', description: 'Designer' },
+    { id: 3, name: 'Doe', description: 'Tester' },
+    { id: 4, name: 'Leonardo', description: 'Product Manager' },
+    { id: 5, name: 'Juan', description: 'Analyst' },
+    { id: 6, name: 'Manuel', description: 'Engineer' },
+    { id: 7, name: 'Samantha', description: 'UX Designer' },
+    { id: 8, name: 'Nicoll', description: 'QA Engineer' },
   ];
 
   selectedUserId: number | undefined;
